@@ -14,6 +14,7 @@ __Note:__
 To run the script continuously with your own realtime data, this line of code needs to be removed `current_execution_time = es_df.agg(max("update_timestamp")).collect()[0][0].isoformat()` it has been marked with this comment `# to be removed when executing continuously`. This line of code is meant to be used along with `Test_&_Verify_Pyspark_Microbatch_Stream.ipynb` for testing/ verification purposes.
 
 ### Key Features of the Script
+- Reading of nested objects from Elasticsearch Indices
 - Incremental Data Loading : Only new or updated records (based on update_timestamp) are processed.
 - Dynamic Delta Table Management : Delta tables are dynamically created based on the _index field from Elasticsearch.
 - Upsert Logic : Ensures data consistency by updating existing records and inserting new ones.
