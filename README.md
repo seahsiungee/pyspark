@@ -31,6 +31,7 @@ Script creates sample data for initial load and 1 subsequent simulation for crea
 
 ### Prerequisites
 - Elasticsearch: Ensure that Elasticsearch is running and accessible.
+- Databricks Secrets: elasticsearch cloud url, username and password
 - Hive Metastore: Ensure that Hive Metastore is configured and accessible.
 - Databricks Cluster: The notebook is designed to run on a Databricks cluster with Spark version 15.4.x-scala2.12.
 
